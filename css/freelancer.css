@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #448AFF;
   outline: none;
 }
 h1,
@@ -54,26 +54,23 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: #448AFF;
   color: white;
 }
 hr.star-primary {
-  border-color: #2C3E50;
+  border-color: #455A64;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2C3E50;
+  color: #455A64;
 }
 .img-centered {
   margin: 0 auto;
 }
 header {
   text-align: center;
-  background: #18BC9C;
   background-repeat: no-repeat;
   background-size: cover;
-
-
   color: white;
 }
 header .container {
@@ -108,7 +105,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: #455A64;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -134,7 +131,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: #448AFF;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -143,13 +140,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: #448AFF;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: #448AFF;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -159,9 +156,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #448AFF;
   color: white;
-  border-color: #18BC9C;
+  border-color: #448AFF;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -299,7 +296,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: #448AFF;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -312,7 +309,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2C3E50;
+  background-color: #455A64;
 }
 footer .footer-col {
   margin-bottom: 50px;
@@ -333,14 +330,14 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
+  color: #448AFF;
   background: white;
   border: solid 2px white;
 }
 .btn-primary {
   color: white;
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #455A64;
+  border-color: #455A64;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -372,17 +369,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #455A64;
+  border-color: #455A64;
 }
 .btn-primary .badge {
-  color: #2C3E50;
+  color: #455A64;
   background-color: white;
 }
 .btn-success {
   color: white;
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #448AFF;
+  border-color: #448AFF;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -414,11 +411,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #448AFF;
+  border-color: #448AFF;
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: #448AFF;
   background-color: white;
 }
 .btn-social {
@@ -490,7 +487,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #2C3E50;
+  background-color: #455A64;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -501,7 +498,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #2C3E50;
+  background-color: #455A64;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -523,7 +520,7 @@ fieldset[disabled] .btn-success.active {
 .service-icon {
   border-radius: 4px;
   color: #fff;
-  background-color: #18BC9C;
+  background-color: #448AFF;
   display: inline-block;
   font-size: 36px;
   height: 90px;

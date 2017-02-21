@@ -16,6 +16,8 @@
       var messageListRef = firebase.database().ref().child('email_list');
       messageListRef.push({ 'email': email });
       emailin.value = "";
+
+      
       window.alert("Merci!");
       document.activeElement.blur();
     } else {

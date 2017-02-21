@@ -1,5 +1,42 @@
-$(function() {
+/***********************
+ *  SEND EMAIL          *
+ * *******************/ 
+ 
+ //email regex
+  function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
 
+  function sendemail(){
+    var emailin = document.getElementById('emailinput');
+    var email = emailin.value;
+
+    if (validateEmail(email)) {
+      var messageListRef = firebase.database().ref().child('email_list');
+      messageListRef.push({ 'email': email });
+      emailin.value = "";
+      window.alert("Merci!");
+      document.activeElement.blur();
+    } else {
+      window.alert("Veuillez entrer une adresse valide");
+    }
+  }
+
+  //user presses enter key event
+  function runScript(event) {
+    if (event.which == 13 || event.keyCode == 13) {
+      sendemail();
+      return false;
+    }
+    return true;
+  }
+
+
+/***********************
+ *  SEND FORMS          *
+ * *******************/ 
+$(function() {
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {

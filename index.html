@@ -32,12 +32,22 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD0C3mhM_xjguTHJBptkUD6pzquW4v-UlI",
+            authDomain: "harvestr-c83a9.firebaseapp.com",
+            databaseURL: "https://harvestr-c83a9.firebaseio.com",
+            storageBucket: "harvestr-c83a9.appspot.com",
+            messagingSenderId: "533282993672"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 
 
-
 <body id="page-top" class="index">
-
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="navcontent">
@@ -83,12 +93,19 @@
                 Développez un produit qui apporte de la valeur à vos utilisateurs et à votre entreprise.
                 </h2>
                 <br></br>
+
             <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Votre email...">
+                <input type="text" class="form-control" placeholder="Votre email..." 
+                        aria-describedby="sizing-addon1" id="emailinput" onkeypress="return runScript(event)">
                 <span class="input-group-btn">
-                    <button class="btn btn-secondary" type="button">Boostez votre productivité</button>
+                    <button class="btn btn-secondary" type="button" id="signupbutton" onclick="sendemail()">
+                        Boostez votre productivité
+                        </button>
                     </span>
-            </div>                   
+            </div>   
+
+            
+                           
           </div>
         </div>
       </div>

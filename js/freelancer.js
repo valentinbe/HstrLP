@@ -3,6 +3,10 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    //#main-slider, main image perfectly fits screen
+	var slideHeight = $(window).height();
+	$('#home-slider .item').css('height',slideHeight);
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
@@ -43,9 +47,16 @@
         if($(window).scrollTop() == 0 ){
             $( "#mainNav" ).css("background", "transparent");
             $( ".navbar-custom .navbar-nav li a " ).css("color", "#ffffff");
+
+            var src = $("#page-top .img-responsive").attr("src").replace("img/logo.png", "img/profile.png");
+            $("#page-top .img-responsive").attr("src", src);
+     //       $(  ).css("color", "#ffffff");
+      //      <a href="#page-top"><img class="img-responsive" src="img/profile.png" alt="logo"></a>
         }else{
             $( "#mainNav" ).css("background", "#e9eaec");
             $( ".navbar-custom .navbar-nav li a " ).css("color", "#0d2238");
+            var src = $("#page-top .img-responsive").attr("src").replace("img/profile.png", "img/logo.png");
+            $("#page-top .img-responsive").attr("src", src);
         }
     });
 

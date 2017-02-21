@@ -511,6 +511,16 @@ HEADER
     font-size: 1.75em;
   }
 }
+@media (max-width: 450px) {
+  #logo{
+    content: url(../img/logo.png);
+    padding: 5px;
+  }
+  .navbar-custom {
+    background: #e9eaec;
+  } 
+}
+
 
 .navcontent{
 

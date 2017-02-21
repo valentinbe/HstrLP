@@ -44,17 +44,21 @@
     });
 
     $(window).scroll(function(){
-        if($(window).scrollTop() == 0 ){
+        if(($(window).scrollTop() == 0 )&&($(window).width() > 450)) {
             $( "#mainNav" ).css("background", "transparent");
             $( ".navbar-custom .navbar-nav li a " ).css("color", "#ffffff");
-
             var src = $("#page-top .img-responsive").attr("src").replace("img/logo.png", "img/profile.png");
             $("#page-top .img-responsive").attr("src", src);
-     //       $(  ).css("color", "#ffffff");
-      //      <a href="#page-top"><img class="img-responsive" src="img/profile.png" alt="logo"></a>
+            $( "#logo" ).css("padding", "0px");
         }else{
             $( "#mainNav" ).css("background", "#e9eaec");
             $( ".navbar-custom .navbar-nav li a " ).css("color", "#0d2238");
+            if ($(window).width() < 768) {
+                $( "#logo" ).css("padding", "5px");
+                $( "#logo" ).css("width", "auto");
+            }else{
+                $( "#logo" ).css("padding", "0px");
+            }
             var src = $("#page-top .img-responsive").attr("src").replace("img/profile.png", "img/logo.png");
             $("#page-top .img-responsive").attr("src", src);
         }

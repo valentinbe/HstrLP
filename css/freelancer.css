@@ -502,6 +502,14 @@ HEADER
     font-size: 1.75em;
   }
 }
+@media (max-width: 767px) {
+  #home-slider .caption .name {
+    font-size: 2.75em;
+  }
+  #home-slider .caption .skills {
+    font-size: 1.75em;
+  }
+}
 
 .navcontent{
 

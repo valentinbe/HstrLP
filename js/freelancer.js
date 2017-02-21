@@ -12,10 +12,19 @@
         event.preventDefault();
     });
 
+    $('#tohash').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
+        
     });
 
     // Closes the Responsive Menu on Menu Item Click
@@ -26,9 +35,22 @@
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 5
         }
-    })
+    });
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() == 0 ){
+            $( "#mainNav" ).css("background", "transparent");
+            $( ".navbar-custom .navbar-nav li a " ).css("color", "#ffffff");
+        }else{
+            $( "#mainNav" ).css("background", "#e9eaec");
+            $( ".navbar-custom .navbar-nav li a " ).css("color", "#0d2238");
+        }
+    });
+
+
+
 
     // Floating label headings for the contact form
     $(function() {

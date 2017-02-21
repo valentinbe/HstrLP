@@ -153,6 +153,7 @@ section h2 {
 
 section.abt {
   background-size: cover;
+  background-color: #0d2238;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -509,13 +510,6 @@ HEADER
   #home-slider .caption .skills {
     font-size: 1.75em;
   }
-
-  #about {
-    width: 1%;
-    background-size: 10px;
-  }
-
-  
 }
 
 .navcontent{

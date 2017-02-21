@@ -61,6 +61,12 @@ $(function() {
             var messageListRef = firebase.database().ref().child('email_list');
             messageListRef.push({ 'email': email });
 
+            var messageListRef2 = firebase.database().ref().child('messages');
+            messageListRef2.push({ 'name': name });
+            messageListRef2.push({ 'email': email });
+            messageListRef2.push({ 'phone': phone });
+            messageListRef2.push({ 'message': message });
+
         },
         filter: function() {
             return $(this).is(":visible");
